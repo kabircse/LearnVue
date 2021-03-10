@@ -76,5 +76,12 @@ For both cases, session/state management we can use vuex.
               console.log("This is done");
             }
           }
-      }
-      testAsync();
+       }
+       testAsync();
+       
+  When promises or async-wait:
+  1. async returns a promise.
+  2. await is used for calling an async function and wait for resolve or reject.
+  3. await blocks the execution of the code within the async
+  4. 
+       
