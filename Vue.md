@@ -1,4 +1,4 @@
-	Accessing Child Component (Instance & Child Elements):
+	Accessing Child Component (Instance & Elements):
 	1. Directly access a child component using ref:
 		<base-input ref="usernameInput"></base-input> // base-input is a child component used in parent
 		this.$refs.usernameInput.focus() //focus() is a method defined in child component
