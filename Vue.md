@@ -1,4 +1,5 @@
 A. Accessing Child Component (Instance & Elements):
+
 	1. Directly access a child component using ref:
 		<base-input ref="usernameInput"></base-input> // base-input is a child component used in parent
 		this.$refs.usernameInput.focus() //focus() is a method defined in child component
@@ -14,7 +15,8 @@ A. Accessing Child Component (Instance & Elements):
 	
 	
 B. Accessing Parent component(Instance & Elements) from child:
-	**1.** In child component use this.$emit('eventName'):
+
+	1. In child component use this.$emit('eventName'):
 	methods:{
 	    openMenu(){
 		this.$emit('openMenu')
@@ -26,7 +28,7 @@ B. Accessing Parent component(Instance & Elements) from child:
 	<child @openMenu="main_menu=true"></child> // or call your method
 
 	
-	**2.** useing vue event system
+	2. useing vue event system
 	Vue's event system is simple. In child use a dispatch :
 
 	this.$dispatch('child-coucou', this);
@@ -37,7 +39,7 @@ B. Accessing Parent component(Instance & Elements) from child:
 	  // Make something there with child reference
 	})
 
-	**3.**
+	3.
 	this.$parent.$options.methods.someParentMethod(data)
 	this.$parent.someParentMethod(data) // How do I call a parent method?
 
